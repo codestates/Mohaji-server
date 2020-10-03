@@ -6,13 +6,15 @@ module.exports = {
     get: async (req, res) => {
         let {playspot_id} = req.params
         let data = await comment.findAll({
+            attributes: ['message', 'createdAt', 'updatedAt'],
             where: { playspot_id },
+            include: [
+                {
+                    model: user,
+                    attributes: ['nickname']
+                }
+            ]
         });
-        // let comments = data.reduce((acc, val) => {
-        //     let { message } = val;
-        //     acc.push({ message });
-        //     return acc
-        // }, [])
         res.status(200).json(data)
     },
 
