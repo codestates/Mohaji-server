@@ -15,6 +15,11 @@ module.exports = {
                 }
             ]
         });
+        data = JSON.parse(JSON.stringify(data)).map((val) => {
+            val.nickname = val.user.nickname;
+            delete val.user;
+            return val
+        })
         res.status(200).json(data)
     },
 
