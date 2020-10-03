@@ -26,7 +26,11 @@ app.use(express.urlencoded({ extended: false, }));
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
-  res.send('Hello World!!')
+  if (req.session.userid) {
+    res.status(200).json({ exist: true })
+  } else {
+    res.status(200).json({ exist: false })
+  }
 })
 
 app.use('/user', userRouter);
