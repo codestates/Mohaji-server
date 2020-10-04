@@ -17,7 +17,7 @@ module.exports = {
         for (let i in tag) {
           if (tag[i]) {
             User_tag.create({
-              user_id: result.id,
+              user_id: user.id,
               tag_id: i
             })
           }
