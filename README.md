@@ -1,32 +1,20 @@
-# Mohaji-server
+**Mohaji** 프로젝트 입니다.
 
+잘 부탁 드립니다.
 
-## Intro
+![img](https://github.com/codestates/Mohaji-client/blob/master/IMG/%EB%AA%A8%ED%95%98%EC%A7%80.png)
 
-아래의 API 문서를 참고해 주세요.
+'심심한데 뭐하지?'
 
-(현재 수정해야 할 부분들이 있습니다. 확인되지 않는 부분은 연락 주세요.)
-https://app.gitbook.com/@fbworkd4943/s/mohaji/#user-info
+'맨날 노래방만 갔는데 이젠 다르게 놀고싶어'
 
-## Before Start
+하는 여러분에게 꼭! 필요한 서비스 **Mohaji** 입니다.
 
-1. `npm install` 을 통해서 의존성 모듈을 설치 합니다.
-2. `.env.example` 파일을 참고해서 필요한 부분을 작성해 주세요.
+자신도 몰랐던 주변의 다양한 놀거리들을 소개시켜드리겠습니다.
 
-## DB 연결
+내 주변에 원하는 태그들만 모아(또는 원치않는 태그들만 제외하고..!) 놀거리를 찾아드립니다.
 
-1. 데이터 베이스와 연결을 진행해 주세요.
- - `npx sequelize-cli db:create`
- - `npx sequelize-cli db:migrate`
- 2. tags 테이블(모델)에 tag가 미리 작성되어 있어야 회원가입을 테스트 할수 있습니다.
-  - 직접 tags 테이블에 몇가지 tag를 작성해 주시거나
-  - Postman을 사용해서 POST 요청으로 추가도 가능합니다.
- 
- ex) `POST`  http://localhost:4000/spot/taginfo 
+### *"매 순간 새로움을 원하는 당신에게"*
 
-```
-    {
-       "tag_name": "보드게임"
-    }
- ```
+심심할 땐 뭐? **Mohaji** 였습니다. 
 
